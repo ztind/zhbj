@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/news_image"
+        android:src="@mipmap/yws"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerCrop"
+        android:layout_width="100dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:id="@+id/news_content"
+        android:layout_toRightOf="@+id/news_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哈哈哈大师傅大师哈哈哈大师傅大师傅但是的考试科目的卡上对面卡萨卡密点卡是哈哈哈大师傅大师傅但是的考试科目的卡上对面卡萨卡密点卡是傅但是的考试科目的卡上对面卡萨卡密点卡是"
+        android:maxLines="3"
+        android:textColor="#000"
+        android:ellipsize="end"
+        />
+    <TextView
+        android:id="@+id/news_updata"
+        android:layout_toRightOf="@+id/news_image"
+        android:layout_below="@+id/news_content"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-12-11 17:50"/>
+    <!--TextView模拟listview之间的分割线-->
+    <TextView
+        android:layout_below="@+id/news_image"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#464946"
+        android:layout_marginTop="3dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <com.zt.zhbj.view.ZdyTabViewPager
+            android:id="@+id/tab_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:background="#9000"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tab_vp_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#fff"
+                android:text="文本" />
+            <!--viewpagerIndicator里的小点指示器-->
+            <!--
+                app:radius="3dp"   小点半径
+                app:fillColor="#f00"  小点选中时的颜色
+                app:pageColor="#fff"  默认颜色
+                app:strokeWidth="0dp" 小点的边宽
+                app:strokeColor="#0f0" 小点的边宽颜色
+                最后别忘了添加命名空间：
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+            -->
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/circle_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:radius="3dp"
+                app:fillColor="#f00"
+                app:pageColor="#fff"
+                app:strokeWidth="0dp"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

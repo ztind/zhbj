@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <!-- android:divider="@null"去除下拉刷新的头部的分割线，在listview的item布局里设置分割线-->
+        <com.zt.zhbj.view.ZdyPullToRefreshListView
+            android:id="@+id/tab_listview"
+            android:cacheColorHint="#fff"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>

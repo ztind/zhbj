@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        >
+        <ImageView
+            android:id="@+id/refresh_jt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/common_listview_headview_red_arrow"
+            android:layout_gravity="center"
+            />
+        <ProgressBar
+            android:id="@+id/refresh_progressbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:padding="5dp"
+            android:indeterminateDrawable="@drawable/zdy_progressbar"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/refresh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="#f00"
+            android:text="下拉刷新"/>
+        <TextView
+            android:id="@+id/refresh_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="最后刷新时间：2016-12-11 23:09"
+            android:textColor="#131313"
+            />
+    </LinearLayout>
+
+</LinearLayout>
